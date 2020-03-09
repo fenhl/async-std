@@ -46,6 +46,11 @@ std = [
   "futures-timer",
   "wasm-bindgen-futures",
   "futures-channel",
+  "crossbeam-queue",
+  "async-signals",
+  "libc",
+  "lazy_static",
+  "async-macros",
 ]
 alloc = [
   "futures-core/alloc",
@@ -66,6 +71,11 @@ once_cell = { version = "1.3.1", optional = true }
 pin-project-lite = { version = "0.1.4", optional = true }
 pin-utils = { version = "0.1.0-alpha.4", optional = true }
 slab = { version = "0.4.2", optional = true }
+crossbeam-queue = { version = "0.2.1", optional = true }
+async-signals = { version = "0.1.0", optional = true }
+lazy_static = { version = "1.4.0", optional = true }
+async-macros = { version = "2.0.0", optional = true }
+libc = { version = "0.2.67", optional = true }
 
 # Devdepencency, but they are not allowed to be optional :/
 surf = { version = "1.0.3", optional = true }
