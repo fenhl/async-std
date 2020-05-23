@@ -81,7 +81,6 @@ async-macros = { version = "2.0.0", optional = true }
 async-signals = { version = "0.1.0", optional = true }
 libc = { version = "0.2.67", optional = true }
 
-<<<<<<< HEAD
 # Devdepencency, but they are not allowed to be optional :/
 surf = { version = "1.0.3", optional = true }
 
@@ -96,14 +95,11 @@ futures-channel = { version = "0.3.4", optional = true }
 [target.'cfg(target_arch = "wasm32")'.dev-dependencies]
 wasm-bindgen-test = "0.3.10"
 
-||||||| parent of 7971002... port windows impl and add missing drop guard
-=======
 [target.'cfg(target_os="windows")'.dependencies]
 winapi = { version = "0.3.8", features = ["threadpoollegacyapiset"] }
 mio-named-pipes = { version = "0.1.6" }
 futures-channel = "0.3.4"
 
->>>>>>> 7971002... port windows impl and add missing drop guard
 [dev-dependencies]
 femme = "1.3.0"
 rand = "0.7.3"
